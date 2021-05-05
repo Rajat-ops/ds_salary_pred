@@ -62,4 +62,7 @@ from sklearn.metrics import mean_absolute_error
 
 print(mean_absolute_error(y_test, preds))
 
+import pickle
+pickl = {'model':rf_model}
+pickle.dump(pickl, open{'model_file' + ".p", "wb"})
 
